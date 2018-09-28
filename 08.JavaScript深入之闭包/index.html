@@ -478,17 +478,6 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">匿名函数Context = &#123;</span><br><span class="line">    AO: &#123;</span><br><span class="line">        <span class="built_in">arguments</span>: &#123;</span><br><span class="line">            <span class="number">0</span>: <span class="number">0</span>,</span><br><span class="line">            length: <span class="number">1</span></span><br><span class="line">        &#125;,</span><br><span class="line">        i: <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>data[0]Context 的 AO 并没有 i 值，所以会沿着作用域链从匿名函数 Context.AO 中查找，这时候就会找 i 为 0，找到了就不会往 globalContext.VO 中查找了，即使 globalContext.VO 也有 i 的值(值为3)，所以打印的结果就是 0。</p>
 <p>data[1] 和 data[2] 是一样的道理。</p>
-<h2 id="下一篇文章"><a href="#下一篇文章" class="headerlink" title="下一篇文章"></a>下一篇文章</h2><p><a href="https://github.com/mqyqingfeng/Blog/issues/10" target="_blank" rel="noopener">JavaScript深入之参数按值传递</a></p>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p>如果想了解执行上下文的具体变化，不妨循序渐进，阅读这六篇：</p>
-<p><a href="https://github.com/mqyqingfeng/Blog/issues/3" target="_blank" rel="noopener">《JavaScript深入之词法作用域和动态作用域》</a></p>
-<p><a href="https://github.com/mqyqingfeng/Blog/issues/4" target="_blank" rel="noopener">《JavaScript深入之执行上下文栈》</a></p>
-<p><a href="https://github.com/mqyqingfeng/Blog/issues/5" target="_blank" rel="noopener">《JavaScript深入之变量对象》</a></p>
-<p><a href="https://github.com/mqyqingfeng/Blog/issues/6" target="_blank" rel="noopener">《JavaScript深入之作用域链》</a></p>
-<p><a href="https://github.com/mqyqingfeng/Blog/issues/7" target="_blank" rel="noopener">《JavaScript深入之从ECMAScript规范解读this》</a></p>
-<p><a href="https://github.com/mqyqingfeng/Blog/issues/8" target="_blank" rel="noopener">《JavaScript深入之执行上下文》</a></p>
-<h2 id="深入系列"><a href="#深入系列" class="headerlink" title="深入系列"></a>深入系列</h2><p>JavaScript深入系列目录地址：<a href="https://github.com/mqyqingfeng/Blog" target="_blank" rel="noopener">https://github.com/mqyqingfeng/Blog</a>。</p>
-<p>JavaScript深入系列预计写十五篇左右，旨在帮大家捋顺JavaScript底层知识，重点讲解如原型、作用域、执行上下文、变量对象、this、闭包、按值传递、call、apply、bind、new、继承等难点概念。</p>
-<p>如果有错误或者不严谨的地方，请务必给予指正，十分感谢。如果喜欢或者有所启发，欢迎star，对作者也是一种鼓励。</p>
 
       
     </div>
@@ -690,7 +679,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript深入之闭包"><span class="nav-text">JavaScript深入之闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#必刷题"><span class="nav-text">必刷题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下一篇文章"><span class="nav-text">下一篇文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关链接"><span class="nav-text">相关链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入系列"><span class="nav-text">深入系列</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript深入之闭包"><span class="nav-text">JavaScript深入之闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#必刷题"><span class="nav-text">必刷题</span></a></li></ol></li></ol></div>
             
 
           </div>
