@@ -111,13 +111,14 @@
 
 
   <meta name="description" content="原生js笔记数据类型(使用typeof检测)  undefined 声明后未赋值的变量为undefined   null typeof 返回 object null == undefined; true 一般如果一个变量将来用于保存对象，最好将其初始化为null 然后用 a!=null进行判断，然后再操作。   boolean true 和 false 一定要是小写 了解其他数据类型转化为bool">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js知识点">
 <meta property="og:url" content="http://yoursite.com/js知识点/index.html">
 <meta property="og:site_name" content="锋利">
 <meta property="og:description" content="原生js笔记数据类型(使用typeof检测)  undefined 声明后未赋值的变量为undefined   null typeof 返回 object null == undefined; true 一般如果一个变量将来用于保存对象，最好将其初始化为null 然后用 a!=null进行判断，然后再操作。   boolean true 和 false 一定要是小写 了解其他数据类型转化为bool">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-28T09:14:39.564Z">
+<meta property="og:updated_time" content="2018-09-28T11:18:32.529Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js知识点">
 <meta name="twitter:description" content="原生js笔记数据类型(使用typeof检测)  undefined 声明后未赋值的变量为undefined   null typeof 返回 object null == undefined; true 一般如果一个变量将来用于保存对象，最好将其初始化为null 然后用 a!=null进行判断，然后再操作。   boolean true 和 false 一定要是小写 了解其他数据类型转化为bool">
@@ -229,6 +230,22 @@
         
         
           
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />文章</a>
@@ -324,7 +341,7 @@
                 
               
 
-              <time title="创建时间：2018-09-28 16:39:41 / 修改时间：17:14:39" itemprop="dateCreated datePublished" datetime="2018-09-28T16:39:41+08:00">2018-09-28</time>
+              <time title="创建时间：2018-09-28 16:39:41 / 修改时间：19:18:32" itemprop="dateCreated datePublished" datetime="2018-09-28T16:39:41+08:00">2018-09-28</time>
             
 
             
@@ -335,19 +352,26 @@
           </span>
 
           
-
-          
+            <span class="post-category" >
             
-              <span class="post-comments-count">
               <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
               
-                <a href="/js知识点/#SOHUCS" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="js知识点/" itemprop="commentsCount"></span>
-                </a>
+                <span class="post-meta-item-text">分类于</span>
               
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
             
           
 
@@ -644,6 +668,12 @@ xhr.send(null);
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
 
       
       
@@ -682,11 +712,6 @@ xhr.send(null);
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="SOHUCS"></div>
-    </div>
 
   
 
@@ -747,7 +772,37 @@ xhr.send(null);
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -941,21 +996,6 @@ xhr.send(null);
 
 
 
-
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cytQ820tN';
-      var conf = 'ca033e113db36026b153f828fc0f514e';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
 
 
 
